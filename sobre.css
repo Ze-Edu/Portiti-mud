@@ -105,6 +105,16 @@ body{
     height: 100%;
 
   }
+  #slide-1 h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: -190px;
+}
+#slide-2 h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: -190px;
+}
 
 .slider > a{
     display: inline-flex;
