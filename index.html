@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="port.css">
     <link rel="shortcut icon" href="ze (1).ico" type="image/x-icon">
+
     <title>José Portifólio</title>
 </head>
 <body>
@@ -25,15 +26,15 @@
         <h1>José Eduardo</h1>
         <h2 id="h2pri">Sempre Em Desenvolvimento</h2>
         <div class="rede-social">
-            <a href="https://www.linkedin.com/in/josé-eduardo-845606221/" target="_blank">Linkedin</a>
-            <a href="https://github.com/Ze-Edu" target="_blank">GitHub</a>
+            <a id="a1" href="https://www.linkedin.com/in/josé-eduardo-845606221/" target="_blank">Linkedin</a>
+            <a id="a1" href="https://github.com/Ze-Edu" target="_blank">GitHub</a>
         </div>
     </div>
 
     </header>
     <main class="container">
 
-        <div class="card-container">
+        <div class="card-container" id="bola1">
             <div class="c1">
                 <a id="bola" href="https://github.com/Ze-Edu/ClassLabNu" target="_blank">
                     <div class="card">
@@ -49,7 +50,7 @@
             </div>       
         </div>
 
-        <div class="card-container">
+        <div class="card-container" id="bola2">
             <div class="c1">
                 <a id="bola" href="https://github.com/Ze-Edu/GRID-e-FLEX" target="_blank">
                     <div class="card">
@@ -65,7 +66,7 @@
             </div>       
         </div>
   
-        <div class="card-container">
+        <div class="card-container" id="bola3">
             <div class="c1">
                 <a id="bola" href="https://github.com/Ze-Edu/ModeloWeb" target="_blank">
                 <div class="card">
@@ -76,13 +77,42 @@
                 </div>
             </a>
     
-                <div class="card-text">
-                    
-                    Projetos mais recentes desenvolvidos, Onde treino HTMNL e CSS, Com landing pages, sites responsivos como esse, e muito mais no meu <a id="lorem2" href="https://github.com/Ze-Edu" target="_blank"><b>GitHub</b></a>.
+                <div class="card-text" >
+                 Projeto de redes desenvolvido em grupo, onde pegamos nossa empresa criada e implementamos uma planta de cabeamento e nos dispositivos, instalamos softwares de segurança, como PFsense, Microtik, onde apresentamos esse projeto em sala.
                 </div>
             </div>
             
         </div>
+
+        <section id="projetos">
+            <h2>Veja meus últimos Projetos:</h2>
+           
+            <div class="projetos-boxmain">
+        
+              <div class="projetos-container">
+                <span onclick="mudar(1)">1</span>
+                <span onclick="mudar(2)">2</span>
+                <span onclick="mudar(3)">3</span>
+                <div class="card-container1" id="bola1">
+                    <div class="c1">
+                        <a id="bola-" href="https://github.com/Ze-Edu/ClassLabNu" target="_blank">
+                            <div class="card">
+                                <div class="card-wrapper">
+                                    <h2 id="H21">Projeto 1</h2>
+                                    <p>Vem Ver!</p>
+                                </div>
+                            </div>
+                        </a>
+                            <div class="card-text" id="card-textid">
+                                Uns dos meus primeiros projetos desenvolvidos, Sendo ele desenvolvido em sala de aula com o objetivo de conhecer a linguagem C# onde mexiamos com banco de dados para guardar nomes, produtos, emails e etc... Enfim um sistema responsivo. 
+                            </div>
+                    </div>       
+                </div>
+              </div>      
+            </div>
+            <p>E muito mais no meu <a id="af" href="https://github.com/Ze-Edu">GitHub</a></p>
+        
+          </section>
 
     </main>
     
@@ -91,6 +121,7 @@
         <div class="rodape">
         <p id="what">whatsApp (11)94215-2843</p>
     </div>
-    </footer>    
+    </footer> 
+    <script src="script.js"></script>   
 </body>
 </html>

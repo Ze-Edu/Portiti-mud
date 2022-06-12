@@ -67,10 +67,11 @@ h2{
     justify-content: space-between;
     transition: .5s ease-in-out;
 }
-a:hover{
+#a1:hover{
     color: #fff;
     background-color: rgba(0, 0, 0, .4);
 }
+
  
 
 
@@ -93,22 +94,18 @@ a:hover{
     background-color: transparent;
 }
 
-.container{
+.container {
     height: auto;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     margin: 0rem 0;
     background-color: rgb(255, 255, 235);
+    align-items: flex-start;
 }
 
-.card-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: auto;
-}
+
 .card{
     width: 260px;
     height: 260px;
@@ -190,18 +187,16 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-.c1{
+.c1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     border-radius: 10px;
     padding: 3px;
     gap: 10px;
-    margin-left: 100px;
     max-width: 900px;
     gap: 90px;
 }
-
 /* footer */
 
 .footer {
@@ -225,14 +220,53 @@ a:hover{
 }
 
 /* responsivo */
-@media (min-width: 699px){
+@media (min-width: 930px){
     .header{
         display: none;
     }
+    .card-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: auto;
+    }
+    
+
 }
 
 
-@media (max-width: 699px){
+@media (max-width: 930px){
+    #projetos{
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    #af{
+        color: #000;
+        font-weight: 600;
+    }
+
+    span{
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #fff;
+    }
+    span:hover{
+        transform: translateY(-5px);
+    }
+
+    .card-container{
+        display: none;
+    }
+
     .h1-link{
         text-align: center;
         word-break: keep-all;
@@ -244,10 +278,12 @@ a:hover{
         margin-top: 0px;
         font-size: 25px;
     }
-    .card-container{
+    .card-container1{
         text-align: center;
         display: flex;
-        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: auto;
         gap: 10px;
     }
     .c1{
