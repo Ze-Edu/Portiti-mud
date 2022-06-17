@@ -21,7 +21,7 @@ function mudar(pop){
         case 3:
             projeto.innerHTML = "Projeto 3";
             texto.innerHTML = 'Projeto de redes desenvolvido em grupo, onde pegamos nossa empresa criada e implementamos uma planta de cabeamento e nos dispositivos, instalamos softwares de segurança, como PFsense, Microtik, onde apresentamos esse projeto em sala.';
-            link.href = "https://github.com/Ze-Edu/ModeloWeb";
+            link.href = "https://github.com/Ze-Edu/Projeto-de-Redes";
             break;
     
         default:
