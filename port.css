@@ -78,9 +78,9 @@ h2{
 /* About */
 
 .about{
-    margin: auto;
+    display: flex;
+    align-items: center;
     text-align: center;
-    width: 90%;
     display: flex;
     flex-direction: column;
     font-family: 'poppins', sans-serif;
@@ -88,12 +88,58 @@ h2{
     
 }
 #about-principal{
-    border-bottom: 1px solid gray;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 18px;
+    border-radius: 5px;
+}
+.about3x{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#about1{
+    border-radius: 10px;
+    padding: 3px;
+    height: 230px;
+    width: 300px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .1);
+}
+#about2{
+    border-radius: 10px;
+    padding: 3px;
+    height: 230px;
+    width: 300px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .1);
+}
+#about3{
+    border-radius: 10px;
+    padding: 3px;
+    height: 230px;
+    width: 300px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .bolas{
     display: flex;
     flex-direction: row;
+}
+#git{
+    padding: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    border-top: 1px solid black;
 }
 
 
@@ -212,26 +258,61 @@ h2{
     max-width: 900px;
     gap: 90px;
 }
+
+/*me mande uma mensagem */
+#email{
+    padding: 5px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(104, 100, 100, 0.74);
+    border-radius: 15px;
+}
+#h2m{
+    font-family: 'poppins', sans-serif;
+    font-weight: 700px;
+}
+#pm{
+    margin-top: 25px;
+}
+form{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section input, section button, section textarea{
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 300px;
+    display: block;
+} 
+#enviar {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #1e1e2a;
+    border: 1px solid #1e1e2a;
+    transition: .5s ease-in-out;
+  }
+
+  #enviar:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+  }
 /* footer */
 
 .footer {
-    width: 100%;
-    height: 150px;
+    padding: 10px;
     background-color: rgba(104, 100, 100, 0.74);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #1e1e2a;
-}
-.rodape{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#what{
-    margin-top: 15px;
 }
 
 /* responsivo */
@@ -242,11 +323,45 @@ h2{
     #projetos{
         display: none;
     }
+    #jose{
+        display: none;
+    }
 
 }
 
 
 @media (max-width: 930px){
+    .rodape{
+        text-align: center;
+    }
+    .cop{
+        display: none;
+    }
+    .header-container{
+        height: 80vh;
+        width: 100vw;
+        background-color: rgba(104, 100, 100, 0.74);
+        filter: grayscale(0.3);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .about3x{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #git{
+        display: none;
+    }
     #projetos{
         text-align: center;
     }
