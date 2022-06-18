@@ -49,19 +49,21 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 .rede-social{
-    margin-top: 1rem;
+    width: 100%;
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .rede-social a{
+    width: auto;
+    margin: 10px;
     text-decoration: none;
     color: #1e1e2a;
     padding: 1rem 4rem;
     border: 1px solid #1e1e2a;
-    min-width: 4rem;
+    max-width: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -275,21 +277,25 @@ h2{
     margin-top: 25px;
 }
 form{
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
 }
 section input, section button, section textarea{
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.541);
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
     border: none;
     padding: 15px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    width: 300px;
-    display: block;
 } 
 #enviar {
-    margin-left: 50px;
-    margin-right: 50px;
+    width: auto;
     font-size: 15px;
     width: 200px;
     text-align: center;
@@ -297,6 +303,7 @@ section input, section button, section textarea{
     color: #1e1e2a;
     border: 1px solid #1e1e2a;
     transition: .5s ease-in-out;
+    background-color: rgba(0, 0, 0, .1);
   }
 
   #enviar:hover {
@@ -328,9 +335,17 @@ section input, section button, section textarea{
     }
 
 }
+@media (max-width: 500px){
+    .rede-social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
-@media (max-width: 930px){
+@media (max-width: 930px){ 
+    
     .rodape{
         text-align: center;
     }
