@@ -1,6 +1,6 @@
 
-function mudar(pop){
-
+function mudar(pop)
+{
     var queijo = Number(pop);
     var projeto = document.getElementById("H21");
     var texto = document.getElementById("card-textid");
